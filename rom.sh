@@ -2,11 +2,11 @@ repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/man
 # /opt/crave/resync.sh
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
-rm -rf device/xiaomi/onyx
-rm -rf vendor/xiaomi/onyx
-rm -rf device/xiaomi/onyx-kernel
-rm -rf hardware/xiaomi
-rm -rf packages/apps/XiaomiDolby
+# rm -rf device/xiaomi/onyx
+# rm -rf vendor/xiaomi/onyx
+# rm -rf device/xiaomi/onyx-kernel
+# rm -rf hardware/xiaomi
+# rm -rf packages/apps/XiaomiDolby
 
 git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx.git -b lineage-23.0 device/xiaomi/onyx
 git clone https://github.com/poco-f7-onyx/proprietary_vendor_xiaomi_onyx.git -b lineage-23.0 vendor/xiaomi/onyx
