@@ -1,6 +1,6 @@
 repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/romgharti/stable_releases.git -b waterlily -g default,-mips,-darwin,-notdefault
-# /opt/crave/resync.sh
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+/opt/crave/resync.sh
+# repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 rm -rf device/xiaomi/onyx
 # rm -rf vendor/xiaomi/onyx
