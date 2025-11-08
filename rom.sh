@@ -8,6 +8,7 @@ rm -rf device/xiaomi/onyx
 # rm -rf device/xiaomi/onyx-kernel
 # rm -rf hardware/xiaomi
 # rm -rf packages/apps/XiaomiDolby
+rm -rf vendor/infinity-priv/keys
 
 git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx.git -b ros device/xiaomi/onyx
 git clone https://github.com/poco-f7-onyx/proprietary_vendor_xiaomi_onyx.git -b lineage-23.0 vendor/xiaomi/onyx
