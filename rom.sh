@@ -26,6 +26,6 @@ export TARGET_PREBUILT_LAWNCHAIR_LAUNCHER=true
 export TARGET_DEFAULT_PIXEL_LAUNCHER=false
 export PERSIST_SYS_DEFAULT_LAUNCHER=0  
 export PERSIST_SYS_QUICKSWITCH_PIXEL_SHIPPED=1
-riseup sunny user
+riseup onyx user
 make installclean
 rise b
