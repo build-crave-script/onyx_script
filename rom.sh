@@ -16,6 +16,8 @@ git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx-kernel.git 
 git clone https://github.com/poco-f7-onyx/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
 git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git -b lineage-22.2 packages/apps/XiaomiDolby
 # git clone https://github.com/poco-f7-onyx/vendor_infinity-priv_keys.git -b main vendor/infinity-priv/keys
+rm -rf official/devices
+git clone https://github.com/K4LCHAKRA/official_devices_rising.git -b fifteen official/devices
 
 source build/make/envsetup.sh
 source build/envsetup.sh
