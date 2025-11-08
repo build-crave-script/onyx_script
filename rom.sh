@@ -15,4 +15,4 @@ git clone https://github.com/poco-f7-onyx/android_hardware_xiaomi.git -b lineage
 git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git -b lineage-22.2 packages/apps/XiaomiDolby
 
 . build/envsetup.sh
-blissify onyx
+blissify -d onyx
