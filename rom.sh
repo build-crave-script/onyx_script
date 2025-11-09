@@ -31,7 +31,7 @@ curl -s https://github.com/RisingOS-Revived/android_vendor_rising/commit/cbe59b6
 # curl -s https://github.com/RisingOS-Revived/android_vendor_rising/commit/1799ee190c5dae0ff78abe7e1792b36b88bc6ac6.patch | git am
 cd ../..
 
-# cd packages/apps/Settings
+cd packages/apps/Settings
 curl -s https://github.com/RisingOS-Revived/android_packages_apps_Settings/commit/738648640ca1e99a8dfc31a866b2a4596f67b5d1.patch | git am
 curl -s https://github.com/RisingOS-Revived/android_packages_apps_Settings/commit/eb27668750279ebd46143401cc2fa7f893659e26.patch | git am
 cd ../../..
