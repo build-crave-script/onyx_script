@@ -3,9 +3,9 @@ repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/Neoteric-OS
 # repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 rm -rf device/xiaomi/onyx
-rm -rf vendor/xiaomi/onyx
-rm -rf device/xiaomi/onyx-kernel
-rm -rf hardware/xiaomi
+#rm -rf vendor/xiaomi/onyx
+#rm -rf device/xiaomi/onyx-kernel
+#rm -rf hardware/xiaomi
 #rm -rf packages/apps/XiaomiDolby
 
 git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx.git -b ne device/xiaomi/onyx
