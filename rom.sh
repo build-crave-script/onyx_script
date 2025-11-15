@@ -16,5 +16,5 @@ git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git 
 git clone https://gitea.com/goziko32/vendor_gcam.git vendor/mgc
 
 . build/envsetup.sh
-lunch neoteric_onyx-userdebug
+lunch onyx-userdebug
 m bacon
