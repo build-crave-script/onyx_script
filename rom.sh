@@ -1,12 +1,12 @@
-repo init --depth=1 --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
-# /opt/crave/resync.sh
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo init -u https://github.com/Evolution-X/manifest -b bka-q1 --git-lfs
+/opt/crave/resync.sh
+# repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 rm -rf device/xiaomi/onyx
-# rm -rf vendor/xiaomi/onyx
-# rm -rf device/xiaomi/onyx-kernel
-# rm -rf hardware/xiaomi
-# rm -rf packages/apps/XiaomiDolby
+rm -rf vendor/xiaomi/onyx
+rm -rf device/xiaomi/onyx-kernel
+rm -rf hardware/xiaomi
+rm -rf packages/apps/XiaomiDolby
 
 git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx.git -b lineage-23.0 device/xiaomi/onyx
 git clone https://github.com/poco-f7-onyx/proprietary_vendor_xiaomi_onyx.git -b lineage-23.0 vendor/xiaomi/onyx
@@ -16,7 +16,4 @@ git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git 
 git clone https://github.com/poco-f7-onyx/vendor_infinity-priv_keys.git -b main vendor/infinity-priv/keys
 
 . build/envsetup.sh
-export TARGET_SUPPORTS_BLUR=true
-export WITH_GAPPS=true
-lunch infinity_onyx-userdebug
-m bacon
+lunch lineage_onyx-bp3a-userdebug
