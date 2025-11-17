@@ -8,12 +8,12 @@ rm -rf device/xiaomi/onyx-kernel
 rm -rf hardware/xiaomi
 rm -rf packages/apps/XiaomiDolby
 
-git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx.git -b lineage-23.0 device/xiaomi/onyx
-git clone https://github.com/poco-f7-onyx/proprietary_vendor_xiaomi_onyx.git -b lineage-23.0 vendor/xiaomi/onyx
-git clone https://github.com/poco-f7-onyx/android_device_xiaomi_onyx-kernel.git -b lineage-23.0 device/xiaomi/onyx-kernel
+git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx.git -b qpr1 device/xiaomi/onyx
+git clone https://github.com/RisingOS-Revived-devices/proprietary_vendor_xiaomi_onyx.git -b qpr1 vendor/xiaomi/onyx
+git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx-kernel.git -b lineage-23.0 device/xiaomi/onyx-kernel
 git clone https://github.com/poco-f7-onyx/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
 git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git -b lineage-22.2 packages/apps/XiaomiDolby
-git clone https://github.com/poco-f7-onyx/vendor_infinity-priv_keys.git -b main vendor/infinity-priv/keys
+git clone https://gitea.com/goziko32/vendor_gcam.git vendor/mgc
 
 . build/envsetup.sh
 lunch lineage_onyx-bp3a-userdebug
