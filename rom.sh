@@ -17,3 +17,4 @@ git clone https://github.com/poco-f7-onyx/vendor_infinity-priv_keys.git -b main 
 
 . build/envsetup.sh
 lunch lineage_onyx-bp3a-userdebug
+m evolution
