@@ -8,6 +8,9 @@ rm -rf device/xiaomi/onyx-kernel
 rm -rf hardware/xiaomi
 rm -rf packages/apps/XiaomiDolby
 
+rm -rf device/qcom/sepolicy/vndr
+git clone https://github.com/K4LCHAKRA/android_device_qcom_sepolicy_vndr.git -b lineage-23.0-caf-sm8750 device/qcom/sepolicy/vndr
+
 git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx.git -b qpr1 device/xiaomi/onyx
 git clone https://github.com/RisingOS-Revived-devices/proprietary_vendor_xiaomi_onyx.git -b qpr1 vendor/xiaomi/onyx
 git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx-kernel.git -b lineage-23.0 device/xiaomi/onyx-kernel
