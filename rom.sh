@@ -1,4 +1,4 @@
-repo init -u https://github.com/Evolution-X/manifest -b bka-q1 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b bka-q1-los --git-lfs
 /opt/crave/resync.sh
 # repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
