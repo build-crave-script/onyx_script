@@ -8,6 +8,10 @@ rm -rf device/xiaomi/onyx-kernel
 rm -rf hardware/xiaomi
 rm -rf packages/apps/XiaomiDolby
 
+cd hardware/lineage/compat
+curl -s https://github.com/Evolution-X/hardware_lineage_compat/commit/694015f2b507bce7b550e09a93d511ba778242aa.patch | git am
+cd ../../..
+
 rm -rf device/qcom/sepolicy_vndr/sm8750
 git clone https://github.com/K4LCHAKRA/android_device_qcom_sepolicy_vndr.git -b lineage-23.0-caf-sm8750 device/qcom/sepolicy_vndr/sm8750
 
