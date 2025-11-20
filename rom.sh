@@ -18,6 +18,7 @@ curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/46
 curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/fb64189b72f40faaf0cd56b061979d6d00491c32.patch | git am
 curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/2945f4274ac27fec19bb8eefc6a911b5351998ec.patch | git am
 curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/18486d4d22ac90be70e37da3783f00c58cb41fa9.patch | git am
+curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/5ce78d5f99b89d6820020cbaeff8778fc2620944.patch | git am
 cd ../../../..
 
 git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx.git -b qpr1 device/xiaomi/onyx
