@@ -31,3 +31,4 @@ git clone https://gitea.com/goziko32/vendor_gcam.git vendor/mgc
 . build/envsetup.sh
 lunch lineage_onyx-bp3a-userdebug
 m evolution
+# m precompiled_sepolicy -j$(nproc)
