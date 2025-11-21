@@ -13,13 +13,8 @@ cd hardware/lineage/compat
 curl -s https://github.com/Evolution-X/hardware_lineage_compat/commit/694015f2b507bce7b550e09a93d511ba778242aa.patch | git am
 cd ../../..
 
-cd device/qcom/sepolicy_vndr/sm8750
-curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/465ea3447408e581a04203413bb4a2a072398b50.patch | git am
-curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/fb64189b72f40faaf0cd56b061979d6d00491c32.patch | git am
-curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/2945f4274ac27fec19bb8eefc6a911b5351998ec.patch | git am
-curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/18486d4d22ac90be70e37da3783f00c58cb41fa9.patch | git am
-curl -s https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/commit/5ce78d5f99b89d6820020cbaeff8778fc2620944.patch | git am
-cd ../../../..
+rm -rf  device/qcom/sepolicy_vndr/sm8750
+git clone https://github.com/K4LCHAKRA/android_device_qcom_sepolicy_vndr.git -b lineage-23.0-caf-sm8750 device/qcom/sepolicy_vndr/sm8750
 
 git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx.git -b qpr1 device/xiaomi/onyx
 git clone https://github.com/RisingOS-Revived-devices/proprietary_vendor_xiaomi_onyx.git -b qpr1 vendor/xiaomi/onyx
