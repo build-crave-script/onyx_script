@@ -7,9 +7,9 @@ repo init -u https://github.com/RisingOS-Revived/android -b sixteen --git-lfs
 # repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
 
 rm -rf device/xiaomi/onyx
-# rm -rf vendor/xiaomi/onyx
-# rm -rf device/xiaomi/onyx-kernel
-# rm -rf hardware/xiaomi
+rm -rf vendor/xiaomi/onyx
+rm -rf device/xiaomi/onyx-kernel
+rm -rf hardware/xiaomi
 # rm -rf packages/apps/XiaomiDolby
 # rm -rf vendor/lineage-priv/keys
 
