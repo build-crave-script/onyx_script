@@ -1,5 +1,5 @@
-# repo init -u https://github.com/Evolution-X/manifest -b bka-q1-los --git-lfs
-repo init -u https://github.com/Evolution-X/manifest -b bka-q1 --git-lfs
+
+repo init -u https://github.com/VoltageOS/manifest.git -b 16.2 --git-lfs
 /opt/crave/resync.sh
 # repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
 
@@ -8,22 +8,26 @@ rm -rf vendor/xiaomi/onyx
 rm -rf device/xiaomi/onyx-kernel
 rm -rf hardware/xiaomi
 rm -rf packages/apps/XiaomiDolby
+rm -rf packages/apps/GameBar
 
-cd hardware/lineage/compat
-curl -s https://github.com/Evolution-X/hardware_lineage_compat/commit/694015f2b507bce7b550e09a93d511ba778242aa.patch | git am
-cd ../../..
+# device tree
+git clone https://github.com/onyx-voltage/android_device_xiaomi_onyx.git-b bliss device/xiaomi/onyx
 
-rm -rf  device/qcom/sepolicy_vndr/sm8750
-git clone https://github.com/K4LCHAKRA/android_device_qcom_sepolicy_vndr.git -b lineage-23.0-caf-sm8750 device/qcom/sepolicy_vndr/sm8750
+# vendor tree
+git clone https://gitlab.com/romgharti/proprietary_vendor_xiaomi_onyx.git -b lineage-23.2 vendor/xiaomi/onyx
 
-git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx.git -b qpr1 device/xiaomi/onyx
-git clone https://github.com/RisingOS-Revived-devices/proprietary_vendor_xiaomi_onyx.git -b qpr1 vendor/xiaomi/onyx
-git clone https://github.com/RisingOS-Revived-devices/android_device_xiaomi_onyx-kernel.git -b lineage-23.0 device/xiaomi/onyx-kernel
-git clone https://github.com/poco-f7-onyx/android_hardware_xiaomi.git -b lineage-23.0 hardware/xiaomi
-git clone https://github.com/poco-f7-onyx/android_packages_apps_XiaomiDolby.git -b lineage-22.2 packages/apps/XiaomiDolby
-git clone https://gitea.com/goziko32/vendor_gcam.git vendor/mgc
+# kernel device tree
+git clone https://github.com/BlissRoms-Devices/android_device_xiaomi_onyx-kernel.git -b lineage-23.2 device/xiaomi/onyx-kernel
+
+# hardware tree
+git clone https://github.com/BlissRoms-Devices/android_hardware_xiaomi.git -b onyx hardware/xiaomi
+
+# GameBar app
+git clone https://github.com/poco-f7-onyx/packages_apps_GameBar.git -b lineage-23.2 packages/apps/GameBar
+
+# Lunaris Dolby app
+git clone https://github.com/poco-f7-onyx/packages_apps_LunarisDolby.git -b 16.0 packages/apps/LunarisDolby
 
 . build/envsetup.sh
-lunch lineage_onyx-bp3a-userdebug
-m evolution
+brunch device
 # m precompiled_sepolicy -j$(nproc)
