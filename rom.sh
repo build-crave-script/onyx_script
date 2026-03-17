@@ -29,5 +29,5 @@ git clone https://github.com/poco-f7-onyx/packages_apps_GameBar.git -b lineage-2
 git clone https://github.com/poco-f7-onyx/packages_apps_LunarisDolby.git -b 16.0 packages/apps/LunarisDolby
 
 . build/envsetup.sh
-brunch device
+brunch onyx
 # m precompiled_sepolicy -j$(nproc)
