@@ -11,7 +11,7 @@ rm -rf packages/apps/XiaomiDolby
 rm -rf packages/apps/GameBar
 
 # device tree
-git clone https://github.com/onyx-voltage/android_device_xiaomi_onyx.git-b bliss device/xiaomi/onyx
+git clone https://github.com/onyx-voltage/android_device_xiaomi_onyx.git -b bliss device/xiaomi/onyx
 
 # vendor tree
 git clone https://gitlab.com/romgharti/proprietary_vendor_xiaomi_onyx.git -b lineage-23.2 vendor/xiaomi/onyx
