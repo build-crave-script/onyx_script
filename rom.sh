@@ -29,7 +29,7 @@ git clone https://github.com/poco-f7-onyx/packages_apps_GameBar.git -b lineage-2
 # Lunaris Dolby app
 git clone https://github.com/poco-f7-onyx/packages_apps_LunarisDolby.git -b 16.0 packages/apps/LunarisDolby
 
-git clone https://github.com/onyx-voltage/vendor-voltage-priv-keys.git -b main vendor/voltage-priv/keys
+git clone https://github.com/onyx-voltage/vendor_voltage-priv_keys.git -b main vendor/voltage-priv/keys
 
 . build/envsetup.sh
 brunch onyx
