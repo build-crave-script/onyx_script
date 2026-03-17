@@ -9,6 +9,7 @@ rm -rf device/xiaomi/onyx-kernel
 rm -rf hardware/xiaomi
 rm -rf packages/apps/XiaomiDolby
 rm -rf packages/apps/GameBar
+rm -rf vendor/voltage-priv/keys
 
 # device tree
 git clone https://github.com/onyx-voltage/android_device_xiaomi_onyx.git -b bliss device/xiaomi/onyx
@@ -27,6 +28,8 @@ git clone https://github.com/poco-f7-onyx/packages_apps_GameBar.git -b lineage-2
 
 # Lunaris Dolby app
 git clone https://github.com/poco-f7-onyx/packages_apps_LunarisDolby.git -b 16.0 packages/apps/LunarisDolby
+
+git clone https://github.com/onyx-voltage/vendor-voltage-priv-keys.git -b main vendor/voltage-priv/keys
 
 . build/envsetup.sh
 brunch onyx
