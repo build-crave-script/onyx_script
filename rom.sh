@@ -15,7 +15,7 @@ rm -rf vendor/voltage-priv/keys
 git clone https://github.com/onyx-voltage/android_device_xiaomi_onyx.git -b bliss device/xiaomi/onyx
 
 # vendor tree
-git clone https://gitlab.com/romgharti/proprietary_vendor_xiaomi_onyx.git -b lineage-23.2 vendor/xiaomi/onyx
+git clone https://gitlab.com/onyx-vendor/proprietary_vendor_xiaomi_onyx.git -b lineage-23.2 vendor/xiaomi/onyx
 
 # kernel device tree
 git clone https://github.com/BlissRoms-Devices/android_device_xiaomi_onyx-kernel.git -b lineage-23.2 device/xiaomi/onyx-kernel
